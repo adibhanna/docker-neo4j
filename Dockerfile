@@ -7,7 +7,7 @@ RUN yum install -y tar
 
 # Install Neo4j 2.1.7 in /var/lib/neo4j
 RUN mkdir /var/lib/neo4j
-RUN wget http://dist.neo4j.org/neo4j-community-2.1.7-unix.tar.gz
+RUN wget http://dist.neo4j.org/neo4j-community-2.2.0-unix.tar.gz
 RUN tar zxf neo4j-community-2.1.7-unix.tar.gz
 RUN cp -r neo4j-community-2.1.7/* /var/lib/neo4j
 RUN export NEO4J_HOME=/var/lib/neo4j
